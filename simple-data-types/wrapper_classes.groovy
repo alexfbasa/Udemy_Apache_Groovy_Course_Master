@@ -1,3 +1,6 @@
+/*
+Groovy variables by default is an object, so you can call extra functions.
+ */
 byte b = 10
 b.getClass().getName()
 
