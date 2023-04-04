@@ -8,10 +8,10 @@ Read more - Java version [here](01-getting-started/java-to-groovy/start.groovy)
 Read more - Groovy version [here](01-getting-started/java-to-groovy/finish.groovy)
 Groovy by default treat variables with its related Wrapper class. So every variable in Groovy is an object.
 
-Read more [here](simple-data-types/wrapper_classes.groovy)
+Read more [here](03-simple-data-types/wrapper_classes.groovy)
 A simple way to define a variable in Groovy you can use "def", when you don't care:
 <h5>def x = 10</h5>
 <h5>def x = "Ldap"</h5>
 <h5>def x = 10.0</h5>
-Read more [here](simple-data-types/optional_type.groovy)
+Read more [here](03-simple-data-types/optional_type.groovy)
 However, if your variable is not going to change, then we should go ahead and assign the right type.
