@@ -8,16 +8,16 @@ public class User {
     private String email;
     private Date dob;
 
-    public User(){
+    public User() {
 
     }
 
-    public User(String first,String last){
+    public User(String first, String last) {
         this.firstName = first;
         this.lastName = last;
     }
 
-    public User(String first,String last,String email) {
+    public User(String first, String last, String email) {
         this.firstName = first;
         this.lastName = last;
         this.email = email;
@@ -63,12 +63,12 @@ public class User {
         this.dob = dob;
     }
 
-    public void printFullName(){
+    public void printFullName() {
         System.out.println("FullName: " + firstName + " " + lastName);
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return "Person[first=" + firstName + ",last=" + lastName + "]";
     }
 

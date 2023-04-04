@@ -20,5 +20,5 @@ assert 1 == (3 + 10) * 100 / 5 * 20
 
 // The power assertion statements true power unleashes in complex Boolean statements, 
 // or statements with collections or other toString-enabled classes:
-def x = [1,2,3,4,5]
-assert (x << 6) == [6,7,8,9,10]
+def w = [1, 2, 3, 4, 5]
+assert (x << 6) == [6, 7, 8, 9, 10]
