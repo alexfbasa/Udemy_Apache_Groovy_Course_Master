@@ -1,3 +1,3 @@
-def tweet = new Tweet("therealdanvega","Hello, Twitter!")
+def tweet = new Tweet("alexandrebasa","Hello, Twitter!")
 tweet.addToFavorites()
 println tweet

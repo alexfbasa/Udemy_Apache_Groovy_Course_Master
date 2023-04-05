@@ -1,30 +1,28 @@
-@groovy.transform.ToString
+import groovy.transform.ToString
+
+@ToString
 class Tweet {
 
-    String username // @therealdanvega
+    String userName
     String text
-    Integer retweets
-    Integer favorites
-    Date createdOn
-    
-    public Tweet(String user, String tweet) {
-       username = user
-       text = tweet
-       retweets = 0
-       favorites = 0
-       createdOn = new Date()
+    Double tweets
+    Double favorites
+    Date d
+
+    Tweet(String user, String text) {
+        this.userName = user
+        this.text = text
+        d = new Date()
+        tweets = 0
+        favorites = 0
+
     }
-    
-    void addToRetweets(){
-        retweets += 1
+
+    void addTweet() {
+        tweets += 1
     }
-    void addToFavorites(){
+
+    void addFav() {
         favorites += 1
     }
-
 }
-
-def tweet = new Tweet("therealdanvega","Hello,Twitter!")
-println tweet
-
-
