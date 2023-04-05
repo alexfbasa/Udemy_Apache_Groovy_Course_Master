@@ -30,9 +30,9 @@ assert 5 >= -2
 
 // Logical Operators
 
-assert !false           
-assert true && true     
-assert true || false 
+assert !false
+assert true && true
+assert true || false
 
 
 // Conditional Operators
@@ -44,29 +44,29 @@ assert true || false
     } else {
         result = 'Not found'
     }
-    
-    String s = ""
-    result = ( s != null && s.length() > 0 ) ? 'Found' : 'Not Found'
+
+    String w = ""
+    result = ( w != null && s.length() > 0 ) ? 'Found' : 'Not Found'
 
     // Elvis Operator
-    displayName = user.name ? user.name : 'Anonymous'   
-    displayName = user.name ?: 'Anonymous'   
+//    displayName = user.name ? user.name : 'Anonymous'
+//    displayName = user.name ?: 'Anonymous'
 
 // Object Operators
 
     // Safe Navigation Operator
 
-    // Java
-    Person p = new Person()
-    if( p.address != null ) {
-        Address address = p.address
-        address.first = "1234 Main"
-    }
-    
+//    // Java
+//    Person p = new Person()
+//    if( p.address != null ) {
+//        Address address = p.address
+//        address.first = "1234 Main"
+//    }
+
     // Groovy
-    def address = p?.address
-    assert address == null
-   
+//    def address = p?.address
+//    assert address == null
+
 // So Much More
 println "http://groovy-lang.org/operators.html"
 
