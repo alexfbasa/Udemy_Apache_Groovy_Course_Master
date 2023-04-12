@@ -1,2 +1,2 @@
-Person p = new Person("Dan", "Vega")
+Person p = new Person("Alex", "Basa")
 println p

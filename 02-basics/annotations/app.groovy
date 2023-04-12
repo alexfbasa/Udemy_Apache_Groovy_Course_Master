@@ -5,5 +5,3 @@ def c1 = new Customer(first: 'Tom', last: 'Jones', age: 21, since: d, favItems: 
 println c1
 def c2 = new Customer('Tom', 'Jones', 21, d, ['Books', 'Games'])
 assert c1 == c2
-
-c1.first = "Dan"
