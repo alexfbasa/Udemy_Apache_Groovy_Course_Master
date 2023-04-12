@@ -16,3 +16,4 @@ println map
 println map.getClass().getName()
 println map.size()
 println map.values()
+println map.keySet()

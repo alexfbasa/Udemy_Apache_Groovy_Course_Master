@@ -1,4 +1,6 @@
-@groovy.transform.ToString()
+import groovy.transform.ToString
+
+@ToString()
 class Developer {
 
     String first

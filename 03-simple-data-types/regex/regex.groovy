@@ -1,6 +1,7 @@
 // Java Sample Pattern
 
 import java.util.regex.*;
+
 Pattern pattern = Pattern.compile("a\\\\b")
 println pattern
 println pattern.class
@@ -12,15 +13,15 @@ String url = $/http://threaldanvega.com/blog/$
 
 println slashy.class
 
-def pattern = ~/a\b/
-println pattern.class
+def pattern1 = ~/a\b/
+println pattern1.class
 
 // Find | Match
 
 def text = "Being a Cleveland Sports Fan is no way to go through life" // true
-def pattern = ~/Cleveland Sports Fan/
-def finder = text =~ pattern
-def matcher = text ==~ pattern
+def pattern2 = ~/Cleveland Sports Fan/
+def finder = text =~ pattern2
+def matcher = text ==~ pattern2
 
 println finder
 println finder.size()
@@ -28,19 +29,18 @@ println matcher
 
 // ----------------------------------------------------------------------------------
 
-def text = "Cleveland Sports Fan"
-def pattern = ~/Cleveland Sports Fan/
-def matcher = text ==~ pattern
+def s = "Cleveland Sports Fan"
+def pattern3 = ~/Cleveland Sports Fan/
+def b = s ==~ pattern3
 
-println matcher
+println b
 
-if( matcher ) { // do something }
+if (b) {
+    println b
+}// do something
 
 
 // ----------------------------------------------------------------------------------
 
-def text = "Being a Cleveland Sports Fan is no way to go through life" // true
-def pattern = ~/Cleveland/
-
-text = text.replaceFirst(pattern,"Buffalo")
-println text
+def text01 = "Being a Cleveland Sports Fan is no way to go through life" // true
+def pattern06 = ~/Cleveland/
