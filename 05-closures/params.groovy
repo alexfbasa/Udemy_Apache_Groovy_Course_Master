@@ -2,20 +2,24 @@
 def foo = {
     println it
 }
-
-foo('dan')
+/*
+The implicit parameter, if no name is given to that parameter, is always going to be the keyword
+it.
+ */
+foo('implicit')
 
 def noparams = { ->
     println "no params..."
 }
 
+//noparams(6) will show an error
 noparams()
 
 def sayHello = { String first, String last ->
     println "Hello, $first $last"
 }
 
-sayHello("Dan","Vega")
+sayHello("Alex","Simple")
 
 // default values
 def greet = { String name, String greeting = "Howdy" ->
