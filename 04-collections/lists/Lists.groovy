@@ -4,25 +4,31 @@ println nums.class.name
 
 // add | remove | get | clear
 
-nums.push(99)
-nums.putAt(0,77)
-nums[0] = 78
-nums + 7
-nums << 66
+nums.push(99) // append int the begin of the list
+println nums
+nums.putAt(0,77) // will replace index 0 with 77
+println nums
+nums[0] = 78 // Same as line 9
+println nums
+nums + 7 // It already exist
+println nums
+nums << 66 // add in the end
+println nums + [55, 66, 77] // It won't be added
+println nums
 
 nums.pop()
 nums.removeAt(0)
-def newList = nums - 3
+def newList = nums - 3 // Create a new list
 println newList
 
 println nums.getAt(0..3)
-nums = []
+nums = [] //clear the list
 
 // flatten
 nums << [3,4,5]
 nums << [1,2]
 println nums
-println nums.flatten()
+println nums.flatten()  // Merge sublist into a list
 
 // equals
 def myNumbers = [1,2,3]

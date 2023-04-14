@@ -3,11 +3,13 @@ def c = { }
 println c.class.name
 println c instanceof Closure
 
+
+// Name is a parameter now
 def sayHello = { name ->
     println "Hello, $name"
 }
 
-sayHello('Dan')
+sayHello('Suzana Fagundes')
 
 List nums = [1,4,7,4,30,2]
 nums.each { num ->

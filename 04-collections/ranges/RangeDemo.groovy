@@ -1,4 +1,7 @@
 Range r = 1..10
+for ( def number_r : r){
+    println "this is number ${number_r}"
+}
 println r
 println r.class.name
 println r.from
@@ -21,6 +24,5 @@ println oneWeekAway
 Range days = today..oneWeekAway
 println days
 
-String letters = ('a'..'x')
-println letters
-println(('a'..'z').class)
+Range letters = 'a'..'z'
+letters.each {print it}

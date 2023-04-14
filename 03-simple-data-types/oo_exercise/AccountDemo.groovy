@@ -1,4 +1,6 @@
-@groovy.transform.ToString
+import groovy.transform.ToString
+
+@ToString
 class Account {
 
     BigDecimal balance = 0.0
@@ -20,6 +22,7 @@ class Account {
 
 
 Account checking = new Account(type:"Checking")
+println checking
 checking.deposit(100.00)
 
 Account savings = new Account(type:"Savings")
