@@ -21,5 +21,6 @@ println oneWeekAway
 Range days = today..oneWeekAway
 println days
 
-Range letters = 'a'..'z'
+String letters = ('a'..'x')
 println letters
+println(('a'..'z').class)
